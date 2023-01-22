@@ -8,7 +8,7 @@ while True:
     comp_pick = random.choice(options)
     player_pick = input("Please type one of the following options: Rock, Paper, Scissors\n")
     if player_pick == "Rock" or player_pick == "rock":
-        print(comp_pick)
+        print(f"I chose {comp_pick}")
         if comp_pick == "Paper":
             wins_of_comp += 1
             if wins_of_comp != 3:
@@ -21,7 +21,7 @@ while True:
             if wins_of_player != 3:
                 print("My bad, I will win the next one!")
     elif player_pick == "Paper" or player_pick == "paper":
-        print(comp_pick)
+        print(f"I chose {comp_pick}")
         if comp_pick == "Scissors":
             wins_of_comp += 1
             if wins_of_comp != 3:
@@ -34,7 +34,7 @@ while True:
             if wins_of_player != 3:
                 print("My bad, I will win the next one!")
     elif player_pick == "Scissors" or player_pick == "scissors":
-        print(comp_pick)
+        print(f"I chose {comp_pick}")
         if comp_pick == "Rock":
             wins_of_comp += 1
             if wins_of_comp != 3:
